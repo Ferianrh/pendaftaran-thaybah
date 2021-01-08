@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mahad Thaybah</title>
+    <link rel="shortcut icon" href="img/logo/thaybah-icon.png" type="image/png">
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
+<!--
+Tooplate 2117 Infinite Loop
+https://www.tooplate.com/view/2117-infinite-loop
+-->
+  <style>
+    .special{
+      color: #369;
+      padding: 0.8em;
+      /* width: 100px;
+      height: 100px;*/
+    }
+    .btn-daftar{
+      background-color: #357;
+    }
+    .btn-daftar:hover{
+      background-color: #369;
+    }
+    
+  </style>
+
+  </head>
+  <body>    
+    <!-- Hero section -->
+    <section class="text-white ">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md bg-white" >              
+        <div class="container">   
+          <div class="tm-next">
+            <a href="#infinite" class="navbar-brand "><span><img src="img/logo/thaybah-2.png" class="logo" alt="" width="170"></span></a>       
+          </div>             
+            
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item float-right">
+                <a class="nav-link " href="/Login"><button class="btn btn-secondary text-white">Login</button></a>
+              </li>                      
+            </ul>
+          </div>        
+        </div>
+      </nav>    
+    </section>
+
+    <section id="persyaratan" class="tm-section-pad-top">
+        <div class="container border border-primary rounded">
+            <div class="row tm-content-box"><!-- first row -->
+                <div class="col-lg-12 col-xl-12">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4 tm-section-title">Persyaratan </h2>
+                        <p class="mb-4 tm-intro-text">1. Mahasiswa Muslim</p>
+                        <p class="mb-4 tm-intro-text">2. Untuk jenjang D4/S1, maksimal semester 2.</p>
+                        <p class="mb-4 tm-intro-text">3. Untuk jenjang D3, maksimal semester 1.</p>
+                        <p class="mb-4 tm-intro-text">4. Ikhlas dan bersungguh-sungguh dalam belajar.</p>
+                        <p class="mb-4 tm-intro-text">5. Siap menaati peraturan Ma’had Thaybah Surabaya.</p>
+                        <p class="mb-4 tm-intro-text">6. Tidak merokok.</p>
+                        <p class="mb-4 tm-intro-text">7. Komitmen dengan program Ma’had Thaybah Surabaya.</p>
+                        <p class="mb-4 tm-intro-text">8. Memprioritaskan Pesma Thaybah dibandingkan organisasi lain</p>
+                        <p class="mb-4 tm-intro-text">9. Wajib mengikuti pendidikan minimal 2 tahun </p>
+                        
+                    </div>
+                </div>
+            </div><!-- first row -->
+        </div>
+    </section>
+
+    <section id="form" class="tm-section-pad-top">
+        <div class="container ">
+            <form action="pendaftaran-proses.php" method = "POST" enctype="multipart/form-data">
+                <div class="row tm-content-box"><!-- first row -->
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                        <h4>Biodata Santri</h4>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Username <span class="text-danger">*</span>:</label>
+                            <input type="text" name="username" class="form-control"  value="" required>
+                            <label class="control-label text-warning">*Note: Password anda akan otomatis tergenerate dari 3 huruf depan nama lengkap dan 2 angka tanggal lahir anda</label>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">No KTP <span class="text-danger">*</span>:</label>
+                            <input type="number" name="no_ktp" class="form-control"  value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Nama Lengkap <span class="text-danger">*</span>:</label>
+                            <input type="text" name="nama_lengkap"  class="form-control" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Nama Panggilan <span class="text-danger">*</span>:</label>
+                            <input type="text" name="nama_panggilan" class="form-control" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Nama Kunyah <span class="text-danger">*</span>:</label>
+                            <input type="text" name="nama_kunyah" class="form-control" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Tempat Lahir <span class="text-danger">*</span>:</label>
+                            <input type="text" name="tempat_lahir" class="form-control" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Tanggal Lahir <span class="text-danger">*</span>:</label>
+                            <input type="date" name="tanggal_lahir" class="form-control" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Kota Asal<span class="text-danger">*</span>:</label>
+                            <input type="text" name="kota_asal" class="form-control" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Alamat Asal <span class="text-danger">*</span>:</label>
+                            <input type="text" name="alamat_asal" class="form-control" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">No Hp <span class="text-danger">*</span>:</label>
+                            <input type="text" name="no_hp" class="form-control" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Email <span class="text-danger">*</span>:</label>
+                            <input type="email" name="email" email   class="form-control" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Nama Kampus <span class="text-danger">*</span>:</label>
+                            <input type="text" name="nama_kampus" nama_kampus  class="form-control" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Jurusan <span class="text-danger">*</span>:</label>
+                            <input type="text" name="jurusan" jurusan  class="form-control" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Strata <span class="text-danger">*</span>:</label>
+                            <select name="strata"  class="form-control" value="" id="">
+                                <option value="S1">Strata 1 (S1)</option>
+                                <option value="S2">Strata 2 (S2)</option>
+                                <option value="S3">Strata 3 (S3)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Tahun Angkatan <span class="text-danger">*</span>:</label>
+                            <input type="text" name="tahun_angkatan"   class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label class="control-label text-dark">Unggah Foto :</label>
+                            <img id="image-preview" src="" width="360" alt="foto_profil.jpg">
+                            <input type="file" class="form-control mt-3" name="image"   required accept="image/*" id="image-source" onchange="previewImage();">
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <h4 class="card-title">Biodata Keluarga</h4>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label class="control-label text-dark">Nama Ayah :</label>
+                            <input type="text" name="nama_ayah"    class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Alamat Ayah :</label>
+                            <input type="text" name="alamat_ayah"  class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Pekerjaan Ayah :</label>
+                            <input type="text" name="pekerjaan_ayah"   class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">No. HP Ayah :</label>
+                            <input type="text" name="no_hp_ayah"   class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Nama Ibu :</label>
+                            <input type="text" name="nama_ibu" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Alamat Ibu :</label>
+                            <input type="text" name="alamat_ibu"   class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Pekerjaan Ibu :</label>
+                            <input type="text" name="pekerjaan_ibu"    class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">No HP Ibu :</label>
+                            <input type="text" name="no_hp_ibu" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <b>Kosongkan data wali bila tidak perlu</b>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label text-dark">Nama Wali :</label>
+                            <input type="text" name="nama_wali"    class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label text-dark">Alamat wali :</label>
+                          <input type="text" name="alamat_wali"   class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">Pekerjaan Wali :</label>
+                            <input type="text" name="pekerjaan_wali"   class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label text-dark">No HP Wali :</label>
+                            <input type="text" name="no_hp_wali"   class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success" name="simpan" type="submit">Submit</button>
+            </form>
+            </div><!-- first row -->
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <!-- <section id="contact" class="tm-section-pad-top"> -->
+        
+    <!-- </section> -->
+    
+    <script src="js/jquery-1.9.1.min.js"></script>     
+    <script src="slick/slick.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
+    <script>
+
+    function previewImage() {
+        document.getElementById("image-preview").style.display = "block"; 
+        var oFReader = new FileReader();
+        oFReader.readAsDataURL(document.getElementById("image-source").files[0]);
+
+        oFReader.onload = function (oFREvent) {
+        document.getElementById("image-preview").src = oFREvent.target.result;
+        };
+    };
+
+
+
+    var sectionOrtu = document.getElementById("section_ortu");
+    var sectionWali = document.getElementById("section_wali");
+
+    function kontakKeluarga(data) { 
+  
+
+        if (data.value=='ortu') {
+            sectionOrtu.style.display = "block";
+            sectionWali.style.display = "none";
+            // $(".trigger-required-ortu").attr("required","true");
+            // $(".trigger-required-wali").removeAttr("required");
+        } else if (data.value=='wali') {
+            sectionOrtu.style.display = "none";
+            sectionWali.style.display = "block";
+            // $(".trigger-required-ortu").removeAttr("required");
+            // $(".trigger-required-wali").attr("required","true");
+        }
+    }
+
+
+      function getOffSet(){
+        var _offset = 450;
+        var windowHeight = window.innerHeight;
+
+        if(windowHeight > 500) {
+          _offset = 400;
+        } 
+        if(windowHeight > 680) {
+          _offset = 300
+        }
+        if(windowHeight > 830) {
+          _offset = 210;
+        }
+
+        return _offset;
+      }
+
+      
+      $(function(){
+        
+        // Close mobile menu after click 
+        $('#tmNav a').on('click', function(){
+          $('.navbar-collapse').removeClass('show'); 
+        })
+
+        // Scroll to corresponding section with animation
+        $('#tmNav').singlePageNav({
+          'easing': 'easeInOutExpo',
+          'speed': 600
+        });        
+        
+        // Add smooth scrolling to all links
+        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, 'easeInOutExpo', function(){
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+      });
+    </script>
+  </body>
+</html>
